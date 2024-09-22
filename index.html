@@ -8,13 +8,15 @@
 </head>
 <body>
     <div class="container">
-        <h1>Saint Quote Generator</h1>
-        <div id="quote-container">
-            <p id="quote">Press the button to generate a saint quote!</p>
-            <p id="author"></p>
+        <div id="image-container" class="quote-container">
+            <!-- Generated image will be inserted here -->
         </div>
-        <button onclick="generateQuote()">Random Quote</button>
-        <button onclick="shareImage()">Share Quote</button>
+        <button id="generate-button" class="generate-btn">Random Quote</button>
+        <div class="share-buttons">
+            <a id="share-facebook" target="_blank">Share on Facebook</a>
+            <a id="share-twitter" target="_blank">Share on Twitter</a>
+            <a id="download-instagram" download="saint-quote.jpg">Download for Instagram</a>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
